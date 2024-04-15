@@ -1,0 +1,56 @@
+import React from "react";
+import Container from "../components/Container";
+import logo from "../assets/logo.png";
+import iglogowhite from "../assets/iglogowhite.png";
+import fblogowhite from "../assets/fblogowhite.png";
+const Footer = () => {
+  return (
+    <div className="w-full text-white bg-[#091036] p-8">
+      <Container>
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="flex my-4 md:my-0 flex-col md:justify-center md:items-center">
+            <div>
+              <div>
+                <img src={logo} className="min-w-[150px] w-[15vw]" />
+              </div>
+              <div className="my-3">
+                <p>
+                  31, Jadunath Sarbobhouma Ln, Railway Colony, <br />
+                  Dakshineswar, Kolkata, West Bengal 700016
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex my-4 md:my-0 flex-col md:justify-center md:items-center">
+            <div className="flex flex-col gap-2">
+              <div className="flex flex-wrap gap-2">
+                <p>Call: </p>
+                <p>+91 99999 00000</p>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <p>Email: </p>
+                <p>info@alahyan.com</p>
+              </div>
+              <div className="flex flex-wrap gap-2 items-center">
+                <p>Connect with us: </p>
+                <div className="flex gap-2">
+                  <span>
+                    <img src={iglogowhite} />
+                  </span>
+                  <span>
+                    <img src={fblogowhite} />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
+      <div className="py-4 text-sm">
+        <p className="text-center">&copy; Al Ahyan manpower consultancy 2024</p>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;
