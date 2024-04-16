@@ -10,11 +10,31 @@ const ReviewCard = ({ review, name, position }) => {
         <img src={comma} alt="comma" />
       </div>
       <div>
-        <p className=" font-light text-lg">{review}</p>
+        <p
+          className=" font-light text-lg"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          {review}
+        </p>
       </div>
       <div className="flex font-extralight flex-col justify-end items-end">
-        <p className="">{name}</p>
-        <p className="text-sm">{position}</p>
+        <p
+          className=""
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          {name}
+        </p>
+        <p
+          className="text-sm"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
+          {position}
+        </p>
       </div>
     </div>
   );

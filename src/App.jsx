@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Home from "./sections/Home";
 import Hirings from "./sections/Hirings";
@@ -9,10 +9,16 @@ import Stats from "./sections/Stats";
 import Reviews from "./sections/Reviews";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const [count, setCount] = useState(0);
-
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
   return (
     <>
       <Home />

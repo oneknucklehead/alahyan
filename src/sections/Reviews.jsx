@@ -87,11 +87,27 @@ const Reviews = () => {
             </div>
           </div>
           <div className="order-first md:order-last col-span-6 bg-[#b7d9e4] p-8 flex flex-col justify-evenly rounded-lg">
-            <p className="font-extralight text-2xl">Testimonials</p>
-            <h3 className="text-4xl md:text-6xl font-semibold my-2">
+            <p
+              className="font-extralight text-2xl"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              Testimonials
+            </p>
+            <h3
+              className="text-4xl md:text-6xl font-semibold my-2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
               What our clients say about us
             </h3>
-            <h4 className="text-sm md:text-lg">
+            <h4
+              className="text-sm md:text-lg"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
               It has survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged. It was
               popularised in the 1960s with the release of Letraset sheets

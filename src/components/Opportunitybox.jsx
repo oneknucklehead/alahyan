@@ -5,10 +5,19 @@ const Opportunitybox = () => {
   return (
     <div>
       <div className="p-4 z-20 absolute w-full h-full flex gap-4 flex-col justify-center items-center">
-        <p className="z-20 text-white text-[1.8vw] text-center">
+        <p
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="z-20 text-white text-[1.8vw] text-center"
+        >
           Opportunities from all over the world
         </p>
-        <div className="w-[80%]">
+        <div
+          className="w-[80%]"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
           <Info />
         </div>
       </div>

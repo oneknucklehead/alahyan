@@ -22,6 +22,8 @@ const ServiceCard = ({
           className={`${
             type == "stat" ? "text-4xl md:text-5xl" : "text-2xl"
           } text-center font-semibold`}
+          data-aos="fade-up"
+          data-aos-duration="1000"
         >
           {title}
         </h4>
@@ -29,6 +31,9 @@ const ServiceCard = ({
           className={`${
             type == "stat" ? "text-lg md:text-2xl" : "text-sm md:text-lg"
           } text-center leading-6`}
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="100"
         >
           {description}
         </p>

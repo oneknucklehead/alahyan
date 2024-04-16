@@ -24,7 +24,11 @@ const Contact = () => {
               }}
             >
               <div className="">
-                <h1 className="text-4xl md:text-6xl text-[#091036] text-center font-semibold">
+                <h1
+                  className="text-4xl md:text-6xl text-[#091036] text-center font-semibold"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
+                >
                   Get your dream job abroad <br />
                   Book a call with us now!
                 </h1>

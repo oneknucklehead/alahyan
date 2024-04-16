@@ -16,13 +16,27 @@ const Services = () => {
         <Container>
           <div className="grid grid-cols-2 gap-8 h-full">
             <div className="col-span-2 text-pretty lg:col-span-1 flex flex-col justify-center bg-[#b7d9e4] p-12 h-full rounded-lg">
-              <p className="text-xl md:text-2xl font-extralight">
+              <p
+                className="text-xl md:text-2xl font-extralight"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 What we Offer
               </p>
-              <h3 className="break-all sm:break-words text-4xl md:text-6xl font-semibold my-2">
+              <h3
+                className="break-all sm:break-words text-4xl md:text-6xl font-semibold my-2"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
                 Our services
               </h3>
-              <p className="text-sm md:text-lg">
+              <p
+                className="text-sm md:text-lg"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
                 It has survived not only five centuries, but also the leap into
                 electronic typesetting, remaining essentially unchanged. It was
                 popularised in the 1960s with the release of Letraset sheets
