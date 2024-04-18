@@ -8,11 +8,10 @@ import "../css/Home.css";
 import imgSrc from "../assets/logo.png";
 import fbLogo from "../assets/fblogo.png";
 import igLogo from "../assets/iglogo.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [isOptionsExpanded, setIsOptionExpanded] = useState(false);
-  const option = ["1x", "2x", "3x", "4x"];
-  const [selectedOption, setSelectedOption] = useState("1x");
   const setOption = (option) => {
     setSelectedOption(option);
     isOptionsExpanded(false);
@@ -49,7 +48,7 @@ const Home = () => {
         </div>
         <div className="col-span-12 md:col-span-6 xl:col-span-4 p-8 flex flex-col justify-between">
           <div className="flex flex-wrap justify-between items-end">
-            <div>
+            <div className=" z-50">
               {/* DROPDOWN BUTTON */}
               {/* <ul className="menu">
               <li className="dropdown dropdown-4">
@@ -81,37 +80,45 @@ const Home = () => {
                         animate-fadeIn"
                     id="dropdownMenuLeft"
                   >
-                    <a
-                      href="#"
+                    <Link
+                      to="/about"
                       className="block px-4 py-2 text-sm 
                                    text-[#091036] 
                                    hover:bg-gray-100"
                     >
                       About Us
-                    </a>
-                    <a
-                      href="#"
+                    </Link>
+                    <Link
+                      to="/services"
                       className="block px-4 py-2 text-sm
                                    text-[#091036] 
                                    hover:bg-gray-100"
                     >
                       Services
-                    </a>
-                    {/* <a
-                      href="#"
+                    </Link>
+                    <Link
+                      to="/contact"
                       className="block px-4 py-2 text-sm
                                    text-gray-700 
                                    hover:bg-gray-100"
                     >
-                      Right Option 3
-                    </a> */}
+                      Contact Us
+                    </Link>
+                    <Link
+                      to="/jobs"
+                      className="block px-4 py-2 text-sm
+                                   text-gray-700 
+                                   hover:bg-gray-100"
+                    >
+                      Jobs available
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
-            <div>
+            <Link to="/">
               <img src={imgSrc} className="w-32 md:w-28" alt="brand logo" />
-            </div>
+            </Link>
           </div>
           <div className="break-all lg:break-normal flex flex-col gap-4">
             <div className="">
