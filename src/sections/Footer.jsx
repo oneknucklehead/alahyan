@@ -4,6 +4,7 @@ import logo from "../assets/logo.png";
 import iglogowhite from "../assets/iglogowhite.png";
 import fblogowhite from "../assets/fblogowhite.png";
 const Footer = () => {
+  const date = new Date();
   return (
     <div className="w-full text-white bg-[#091036] p-8">
       <Container>
@@ -25,21 +26,20 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               <div className="flex flex-wrap gap-2">
                 <p>Call: </p>
-                <p>+91 99999 00000</p>
+                <p>+91 82405 55940</p>
               </div>
               <div className="flex flex-wrap gap-2">
                 <p>Email: </p>
-                <p>info@alahyan.com</p>
+                <p>Alahyan.overseas@gmail.com</p>
               </div>
               <div className="flex flex-wrap gap-2 items-center">
                 <p>Connect with us: </p>
                 <div className="flex gap-2">
-                  <span>
-                    <img src={iglogowhite} />
-                  </span>
-                  <span>
-                    <img src={fblogowhite} />
-                  </span>
+                  <a href="https://www.facebook.com/alahyanconsultancy">
+                    <span>
+                      <img src={fblogowhite} />
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -47,7 +47,9 @@ const Footer = () => {
         </div>
       </Container>
       <div className="py-4 text-sm">
-        <p className="text-center">&copy; Al Ahyan manpower consultancy 2024</p>
+        <p className="text-center">
+          &copy; Al Ahyan manpower consultancy {date.getFullYear()}
+        </p>
       </div>
     </div>
   );

@@ -108,10 +108,10 @@ const Reviews = () => {
               data-aos-duration="1000"
               data-aos-delay="200"
             >
-              It has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing.
+              Our clients commend Al-Ahyan for their swift and efficient
+              recruitment services, seamlessly fulfilling our urgent manpower
+              needs. Their professionalism and dedication have been instrumental
+              in our success.
             </h4>
           </div>
         </div>

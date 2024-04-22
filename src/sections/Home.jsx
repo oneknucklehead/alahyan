@@ -11,12 +11,6 @@ import igLogo from "../assets/iglogo.png";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  const [isOptionsExpanded, setIsOptionExpanded] = useState(false);
-  const setOption = (option) => {
-    setSelectedOption(option);
-    isOptionsExpanded(false);
-  };
-
   function toggleDropdown(menuId) {
     const dropdownMenu = document.getElementById(menuId);
     dropdownMenu.classList.toggle("hidden");
@@ -108,7 +102,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <Link to="/">
+            <Link to="/alahyan/">
               <img src={imgSrc} className="w-32 md:w-28" alt="brand logo" />
             </Link>
           </div>
@@ -144,29 +138,27 @@ const Home = () => {
               </p>
             </div>
             <div>
-              <button
-                className="text-white text-lg bg-[#091036] rounded-full px-4 py-2"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="300"
-              >
-                Get Vacancy
-              </button>
+              <a href="#contact">
+                <button
+                  className="text-white text-lg bg-[#091036] rounded-full px-4 py-2"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
+                  Get Vacancy
+                </button>
+              </a>
             </div>
           </div>
 
           <div className="flex items-center gap-2">
-            <p className="text-lg leading-5 font-semibold">
-              Connect <br />
-              with us
-            </p>
+            <p className="text-lg leading-5 font-semibold">Connect with us</p>
             <div className="flex gap-1">
-              <span>
-                <img src={fbLogo} alt="facebook logo" />
-              </span>
-              <span>
-                <img src={igLogo} alt="instagram logo" />
-              </span>
+              <a href="https://www.facebook.com/alahyanconsultancy">
+                <span>
+                  <img src={fbLogo} alt="facebook logo" />
+                </span>
+              </a>
             </div>
           </div>
         </div>

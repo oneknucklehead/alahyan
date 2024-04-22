@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const TitleBox = () => {
   return (
@@ -22,15 +23,15 @@ const TitleBox = () => {
       >
         Consultancy
       </div>
-      <a
-        href="#"
+      <Link
+        to="/alahyan/about"
         className="text-sm font-normal underline"
         data-aos="fade-up"
         data-aos-duration="1000"
         data-aos-delay="300"
       >
         Read more
-      </a>
+      </Link>
     </div>
   );
 };

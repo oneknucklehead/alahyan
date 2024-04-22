@@ -6,7 +6,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Services from "./pages/Services.jsx";
-import Jobs from "./pages/Jobs.jsx";
 const router = createBrowserRouter([
   {
     path: "/alahyan/",
@@ -23,7 +22,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/alahyan/contact",
-    element: <Services />,
+    element: <Contact />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(

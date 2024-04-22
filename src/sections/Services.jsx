@@ -37,18 +37,20 @@ const Services = () => {
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                It has survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
+                Al-Ahyan provides a holistic approach to workforce management,
+                offering services ranging from onboarding and training to
+                recruitment and consulting. With expertise in seamless
+                integration, we optimize talent transitions for global
+                placements. Our tailored solutions ensure efficient operations
+                and long-term success for both candidates and companies seeking
+                international opportunities.
               </p>
             </div>
             <div className="col-span-2 lg:col-span-1 grid grid-cols-1 sm:grid-cols-2 gap-8">
               <ServiceCard
                 title="Consulting"
-                description="We help companies navigate their manpower requirements and provide them with effective solutions for their company."
+                description="Al-Ahyan, your recruitment ally, specializes in Indian talent for seamless overseas job placements, guiding companies with effective staffing solutions.
+                "
                 bg="#A3CBD7"
                 logo={
                   <svg
@@ -69,7 +71,8 @@ const Services = () => {
               />
               <ServiceCard
                 title="Recruitment"
-                description="We help companies navigate their manpower requirements and provide them with effective solutions for their company."
+                description="Al-Ahyan offers screening to onboarding for overseas jobs, specializing in Indian hires. Our seamless process ensures efficient recruitment for companies.
+                "
                 logo={
                   <svg
                     width="28"
@@ -131,7 +134,8 @@ const Services = () => {
               />
               <ServiceCard
                 title="Training"
-                description="We help companies navigate their manpower requirements and provide them with effective solutions for their company."
+                description="Al-Ahyan trains candidates for overseas roles, specializing in Indian hires. We tailor skills to job requirements, ensuring efficient workforce solutions.
+                "
                 bg="#5D8DE2"
                 logo={
                   <svg
@@ -154,7 +158,8 @@ const Services = () => {
               />
               <ServiceCard
                 title="Onboarding"
-                description="We help companies navigate their manpower requirements and provide them with effective solutions for their company."
+                description="Al-Ahyan streamlines onboarding for Indian hires in global roles, optimizing integration for both candidates and employers.
+                "
                 bg="#091036"
                 logo={
                   <svg
