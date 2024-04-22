@@ -81,7 +81,7 @@ const Home = () => {
                     id="dropdownMenuLeft"
                   >
                     <Link
-                      to="/about"
+                      to="/alahyan/about"
                       className="block px-4 py-2 text-sm 
                                    text-[#091036] 
                                    hover:bg-gray-100"
@@ -89,7 +89,7 @@ const Home = () => {
                       About Us
                     </Link>
                     <Link
-                      to="/services"
+                      to="/alahyan/services"
                       className="block px-4 py-2 text-sm
                                    text-[#091036] 
                                    hover:bg-gray-100"
@@ -97,20 +97,12 @@ const Home = () => {
                       Services
                     </Link>
                     <Link
-                      to="/contact"
+                      to="/alahyan/contact"
                       className="block px-4 py-2 text-sm
                                    text-gray-700 
                                    hover:bg-gray-100"
                     >
                       Contact Us
-                    </Link>
-                    <Link
-                      to="/jobs"
-                      className="block px-4 py-2 text-sm
-                                   text-gray-700 
-                                   hover:bg-gray-100"
-                    >
-                      Jobs available
                     </Link>
                   </div>
                 </div>

@@ -11,24 +11,19 @@ const router = createBrowserRouter([
   {
     path: "/alahyan/",
     element: <App />,
-    children: [
-      {
-        path: "/alahyan/",
-        element: <App />,
-      },
-      {
-        path: "/alahyan/about",
-        element: <About />,
-      },
-      {
-        path: "/alahyan/contact",
-        element: <Contact />,
-      },
-      {
-        path: "/alahyan/services",
-        element: <Services />,
-      },
-    ],
+  },
+  {
+    path: "/alahyan/about",
+    element: <About />,
+  },
+
+  {
+    path: "/alahyan/services",
+    element: <Services />,
+  },
+  {
+    path: "/alahyan/contact",
+    element: <Services />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
