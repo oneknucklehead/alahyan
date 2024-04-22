@@ -9,24 +9,26 @@ import Services from "./pages/Services.jsx";
 import Jobs from "./pages/Jobs.jsx";
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/alahyan/",
     element: <App />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
-  },
-  {
-    path: "/services",
-    element: <Services />,
-  },
-  {
-    path: "/jobs",
-    element: <Jobs />,
+    children: [
+      {
+        path: "/alahyan/",
+        element: <App />,
+      },
+      {
+        path: "/alahyan/about",
+        element: <About />,
+      },
+      {
+        path: "/alahyan/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/alahyan/services",
+        element: <Services />,
+      },
+    ],
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(

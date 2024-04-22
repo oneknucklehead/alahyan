@@ -11,6 +11,7 @@ import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Outlet } from "react-router-dom";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,6 +22,7 @@ function App() {
   }, []);
   return (
     <>
+      <Outlet />
       <Home />
       <Hirings />
       <About />
