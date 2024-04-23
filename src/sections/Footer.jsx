@@ -16,8 +16,9 @@ const Footer = () => {
               </div>
               <div className="my-3">
                 <p>
-                  31, Jadunath Sarbobhouma Ln, Railway Colony, <br />
-                  Dakshineswar, Kolkata, West Bengal 700016
+                  1st Floor, 31, Marquis Street, opp. HDFC Bank, New Market
+                  Area,
+                  <br /> Taltala, Kolkata, West Bengal 700016
                 </p>
               </div>
             </div>

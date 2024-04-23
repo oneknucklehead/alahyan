@@ -150,17 +150,17 @@ const Contact = () => {
                   We ensure safety and security of our jobseekers
                 </p>
                 <div className="w-[90%] md:w-[60%] mx-auto text-lg">
-                  <p className="text-center my-4">
+                  {/* <p className="text-center my-4">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the
                     industry&#39;s standard dummy text ever since the 1500s,
                     when an unknown printer took a galley of type and scrambled
                     it to make a type specimen book.
-                  </p>
+                  </p> */}
                   <p className="text-center my-4">
                     Looking for a job abroad? Get in touch with us in just a few
                     simple steps! <br />
-                    Fill out the form below
+                    Fill out the form below.
                   </p>
                 </div>
               </div>
@@ -271,7 +271,7 @@ const Contact = () => {
                   }}
                 >
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.9378525826055!2d88.35875317600063!3d22.65610562990316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89d00f5c68977%3A0x6a984928cca3078a!2s31%2C%20Jadunath%20Sarbobhouma%20Ln%2C%20Railway%20Colony%2C%20Dakshineswar%2C%20Kolkata%2C%20West%20Bengal%20700016!5e0!3m2!1sen!2sin!4v1713367109412!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.28718943588606!2d88.35422489712494!3d22.55683806926277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027705c2695349%3A0xe9375e7e1fccf7c7!2s31%2C%20Marquis%20St%2C%20Fire%20Brigade%20Head%20Quarter%2C%20New%20Market%20Area%2C%20Dharmatala%2C%20Taltala%2C%20Kolkata%2C%20West%20Bengal%20700016!5e0!3m2!1sen!2sin!4v1713866790957!5m2!1sen!2sin"
                     style={{
                       borderRadius: "8px",
                       width: "100%",
