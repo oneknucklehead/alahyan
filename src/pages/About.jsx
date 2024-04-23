@@ -1,15 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "../components/Container";
 import logo from "../assets/logo.png";
 import owner from "../assets/one.jpg";
+import ownerSmall from "../assets/one-small.jpg";
 import aboutImg from "../assets/two.jpg";
+import aboutImgSmall from "../assets/two-small.jpg";
 import { Link } from "react-router-dom";
 import Footer from "../sections/Footer";
+
+import "../css/Lazy.css";
+
 const About = () => {
   function toggleDropdown(menuId) {
     const dropdownMenu = document.getElementById(menuId);
     dropdownMenu.classList.toggle("hidden");
   }
+
+  useEffect(() => {
+    const blurDivs = document.querySelectorAll(".blur-load");
+    blurDivs.forEach((div) => {
+      const img = div.querySelector("img");
+
+      function loaded() {
+        // SHOW IMAGE
+        div.classList.add("loaded");
+      }
+      if (img.complete) {
+        loaded();
+      } else {
+        img.addEventListener("load", loaded);
+      }
+    });
+  }, []);
+
   return (
     <>
       <div className="min-h-screen my-16 px-8 text-[#091036]">
@@ -112,11 +135,19 @@ const About = () => {
                 </div>
               </div>
               <div className="grid lg:grid-cols-2 w-[90%] mx-auto gap-8 justify-center items-center">
-                <img
-                  src={owner}
-                  alt="owner"
-                  className="rounded-full mx-auto h-[30vw] w-[30vw] object-cover"
-                />
+                <div
+                  className="bg-cover bg-center blur-load h-[30vw] w-[30vw] rounded-full "
+                  style={{
+                    backgroundImage: `url(${ownerSmall})`,
+                  }}
+                >
+                  <img
+                    src={owner}
+                    alt="owner"
+                    loading="lazy"
+                    className="rounded-full mx-auto h-[30vw] w-[30vw] object-center object-cover"
+                  />
+                </div>
                 <div className="">
                   <h3 className="text-center lg:text-left text-4xl font-semibold mb-4">
                     What we do?
@@ -152,11 +183,19 @@ const About = () => {
                     text of the printing and typesetting industry.
                   </p>
                 </div>
-                <img
-                  src={aboutImg}
-                  alt="about us image"
-                  className="rounded-full mx-auto h-[30vw] w-[30vw] object-cover"
-                />
+                <div
+                  style={{
+                    backgroundImage: `url(${aboutImgSmall})`,
+                  }}
+                  className="rounded-full bg-cover bg-center blur-load h-[30vw] w-[30vw]"
+                >
+                  <img
+                    src={aboutImg}
+                    loading="lazy"
+                    alt="about us image"
+                    className="rounded-full mx-auto h-[30vw] w-[30vw] object-cover object-center"
+                  />
+                </div>
               </div>
             </div>
           </div>

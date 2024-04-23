@@ -1,8 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "../components/Container";
 import imgSrc from "../assets/womanthreedee.png";
+import imgSrcSmall from "../assets/womanthreedee-small.png";
 import ServiceCard from "../components/ServiceCard";
+
+import "../css/Lazy.css";
+
 const Stats = () => {
+  useEffect(() => {
+    const blurDivs = document.querySelectorAll(".blur-load");
+    blurDivs.forEach((div) => {
+      const img = div.querySelector("img");
+
+      function loaded() {
+        // SHOW IMAGE
+        div.classList.add("loaded");
+        div.classList.add("bg-hidden");
+      }
+      if (img.complete) {
+        loaded();
+      } else {
+        img.addEventListener("load", loaded);
+      }
+    });
+  }, []);
   return (
     <div className="relative min-h-screen my-16 flex flex-col justify-center items-center px-8">
       <div>
@@ -15,7 +36,19 @@ const Stats = () => {
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
             <div className="hidden lg:block bg-[#b7d9e4] rounded-lg">
-              <img src={imgSrc} alt="woman threeD" className="" />
+              <div
+                className="blur-load bg-cover bg-center"
+                style={{
+                  backgroundImage: `url(${imgSrcSmall})`,
+                }}
+              >
+                <img
+                  src={imgSrc}
+                  loading="lazy"
+                  alt="woman threeD"
+                  className="to-blur object-center object-cover"
+                />
+              </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               <ServiceCard

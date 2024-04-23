@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import TitleBox from "../components/TitleBox";
 import InfoBox from "../components/InfoBox";
 import ImageBoxOne from "../components/ImageBoxOne";
@@ -7,7 +6,6 @@ import Opportunitybox from "../components/Opportunitybox";
 import "../css/Home.css";
 import imgSrc from "../assets/logo.png";
 import fbLogo from "../assets/fblogo.png";
-import igLogo from "../assets/iglogo.png";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -15,6 +13,7 @@ const Home = () => {
     const dropdownMenu = document.getElementById(menuId);
     dropdownMenu.classList.toggle("hidden");
   }
+
   return (
     <div className="h-screen">
       <div className="grid grid-cols-12 h-full">

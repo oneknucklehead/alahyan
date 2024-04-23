@@ -1,14 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "../components/Container";
 
 import one from "../assets/one.jpg";
+import oneSmall from "../assets/one-small.jpg";
 import two from "../assets/two.jpg";
+import twoSmall from "../assets/two-small.jpg";
 import three from "../assets/three.jpg";
+import threeSmall from "../assets/three-small.jpg";
 
 import semi1 from "../assets/semi1.png";
 import semi2 from "../assets/semi2.png";
 
+import "../css/Lazy.css";
+
 const About = () => {
+  useEffect(() => {
+    const blurDivs = document.querySelectorAll(".blur-load");
+    blurDivs.forEach((div) => {
+      const img = div.querySelector("img");
+
+      function loaded() {
+        // SHOW IMAGE
+        div.classList.add("loaded");
+      }
+      if (img.complete) {
+        loaded();
+      } else {
+        img.addEventListener("load", loaded);
+      }
+    });
+  }, []);
   return (
     <div className="relative min-h-screen flex justify-center items-center">
       <div className="hidden lg:flex z-10 absolute bottom-0 left-0">
@@ -24,25 +45,43 @@ const About = () => {
             <div className="grid grid-cols-12 gap-4 px-8">
               <div className="col-span-12 lg:col-span-6">
                 <div className="grid grid-cols-2 grid-rows-2 gap-4">
-                  <div className="row-span-2 col-span-1">
+                  <div
+                    className="bg-cover bg-center blur-load row-span-2 col-span-1 rounded-xl"
+                    style={{
+                      backgroundImage: `url(${oneSmall})`,
+                    }}
+                  >
                     <img
                       src={one}
                       alt="owner"
-                      className="rounded-xl h-full w-full object-cover"
+                      loading="lazy"
+                      className="rounded-xl h-full w-full block object-center object-cover "
                     />
                   </div>
-                  <div className="col-span-1">
+                  <div
+                    className="rounded-xl bg-cover bg-center blur-load col-span-1"
+                    style={{
+                      backgroundImage: `url(${twoSmall})`,
+                    }}
+                  >
                     <img
                       src={two}
                       alt="second"
-                      className="rounded-xl h-full w-full object-cover"
+                      loading="lazy"
+                      className="rounded-xl h-full w-full block object-center object-cover "
                     />
                   </div>
-                  <div className=" col-span-1">
+                  <div
+                    className="rounded-xl bg-cover bg-center blur-load col-span-1"
+                    style={{
+                      backgroundImage: `url(${twoSmall})`,
+                    }}
+                  >
                     <img
                       src={three}
                       alt="third"
-                      className="rounded-xl h-full w-full object-cover"
+                      loading="lazy"
+                      className="rounded-xl h-full w-full block object-center object-cover "
                     />
                   </div>
                 </div>
