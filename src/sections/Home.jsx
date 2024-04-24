@@ -97,6 +97,14 @@ const Home = () => {
                     >
                       Contact Us
                     </Link>
+                    <Link
+                      to="/alahyan/jobs"
+                      className="block px-4 py-2 text-sm
+                                   text-gray-700 
+                                   hover:bg-gray-100"
+                    >
+                      Jobs available
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -137,23 +145,26 @@ const Home = () => {
               </p>
             </div>
             <div>
-              <a href="#contact">
+              <Link to="/alahyan/jobs">
                 <button
-                  className="text-white text-lg bg-[#091036] rounded-full px-4 py-2"
+                  className="shadow-xl text-white text-lg bg-[#091036] rounded-full px-4 py-2"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                   data-aos-delay="300"
                 >
                   Get Vacancy
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
 
           <div className="flex items-center gap-2">
             <p className="text-lg leading-5 font-semibold">Connect with us</p>
             <div className="flex gap-1">
-              <a href="https://www.facebook.com/alahyanconsultancy">
+              <a
+                href="https://www.facebook.com/alahyanconsultancy"
+                className="shadow-xl rounded-full"
+              >
                 <span>
                   <img src={fbLogo} alt="facebook logo" />
                 </span>

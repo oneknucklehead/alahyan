@@ -27,7 +27,7 @@ const ImageBoxTwo = () => {
               preserveAspectRatio: "xMidYMid slice",
             },
           }}
-          // height={400}
+          // height={300}
           // width={400}
         />
       </div>

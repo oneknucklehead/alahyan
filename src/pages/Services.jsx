@@ -17,7 +17,10 @@ const Services = () => {
         <Container>
           <div className=" px-8">
             <div className="flex gap-2 flex-wrap justify-between items-center">
-              <Link to="/alahyan/" className="rounded-full bg-[#091036] p-3">
+              <Link
+                to="/alahyan/"
+                className="rounded-full shadow-xl bg-[#091036] p-3"
+              >
                 <svg
                   width="20"
                   height="20"
@@ -75,6 +78,14 @@ const Services = () => {
                                hover:bg-gray-100"
                       >
                         Contact Us
+                      </Link>
+                      <Link
+                        to="/alahyan/jobs"
+                        className="block px-4 py-2 text-sm
+                                   text-gray-700 
+                                   hover:bg-gray-100"
+                      >
+                        Jobs available
                       </Link>
                     </div>
                   </div>
