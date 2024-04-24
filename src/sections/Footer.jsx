@@ -27,11 +27,11 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               <div className="flex flex-wrap gap-2">
                 <p>Call: </p>
-                <p>+91 82405 55940</p>
+                <p>+91 82405 55940 / 74398 86364</p>
               </div>
               <div className="flex flex-wrap gap-2">
                 <p>Email: </p>
-                <p>Alahyan.overseas@gmail.com</p>
+                <p>alahyan.overseas@gmail.com</p>
               </div>
               <div className="flex flex-wrap gap-2 items-center">
                 <p>Connect with us: </p>
@@ -50,6 +50,16 @@ const Footer = () => {
       <div className="py-4 text-sm">
         <p className="text-center">
           &copy; Al Ahyan manpower consultancy {date.getFullYear()}
+        </p>
+        <p className="text-center font-normal text-xs opacity-50">
+          Developed by{" "}
+          <a
+            className="underline"
+            target="_blank"
+            href="https://clickbaitz.com/"
+          >
+            Clickbaitz.com
+          </a>
         </p>
       </div>
     </div>

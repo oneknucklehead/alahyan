@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Container from "../components/Container";
 
-import one from "../assets/one.jpg";
+import one from "../assets/one.jpeg";
 import oneSmall from "../assets/one-small.jpg";
 import two from "../assets/two.jpg";
 import twoSmall from "../assets/two-small.jpg";

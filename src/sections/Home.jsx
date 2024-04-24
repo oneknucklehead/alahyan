@@ -112,7 +112,7 @@ const Home = () => {
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
-                Leading
+                Trusting
               </p>
               <p
                 className="text-5xl sm:text-6xl"
@@ -132,8 +132,8 @@ const Home = () => {
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                Professional team with 14+ years of experience having candidates
-                across all Industries.
+                Seasoned team boasting over 10+ years of collective expertise,
+                with candidates spanning diverse industries.
               </p>
             </div>
             <div>

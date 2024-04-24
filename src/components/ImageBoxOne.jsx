@@ -3,9 +3,11 @@ import img1 from "../assets/woman1.png";
 import img1Small from "../assets/woman1-small.png";
 import img2 from "../assets/semi1.png";
 
+import "../css/LazyPng.css";
+
 const ImageBoxOne = () => {
   useEffect(() => {
-    const blurDivs = document.querySelectorAll(".blur-load");
+    const blurDivs = document.querySelectorAll(".blur-loadpng");
     blurDivs.forEach((div) => {
       const img = div.querySelector("img");
 
@@ -32,7 +34,7 @@ const ImageBoxOne = () => {
           style={{ "background-image": `url(${img1Small})` }}
         > */}
         <div
-          className="blur-load bg-cover bg-center"
+          className="blur-loadpng bg-cover bg-center"
           style={{
             backgroundImage: `url(${img1Small})`,
           }}

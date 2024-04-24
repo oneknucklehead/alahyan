@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Container from "../components/Container";
 import logo from "../assets/logo.png";
-import owner from "../assets/one.jpg";
+import owner from "../assets/one.jpeg";
 import ownerSmall from "../assets/one-small.jpg";
 import aboutImg from "../assets/two.jpg";
 import aboutImgSmall from "../assets/two-small.jpg";
@@ -153,19 +153,21 @@ const About = () => {
                     What we do?
                   </h3>
                   <p className="text-lg text-center lg:text-left">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the
-                    industry&#39;s standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book.
+                    Alhayan specializes in global recruitment solutions,
+                    providing comprehensive services to meet your staffing
+                    needs. From screening to onboarding, we ensure seamless
+                    processes tailored to your requirements. With a focus on
+                    sourcing Indian talent for overseas positions, we deliver
+                    efficient workforce solutions for businesses worldwide.
                   </p>
                   <br />
                   <p className="text-lg text-center lg:text-left">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the
-                    industry&#39;s standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book.
+                    At Alhayan, our mission is to connect companies with top
+                    talent while facilitating smooth transitions and long-term
+                    success. Whether you&#39;re expanding globally or seeking
+                    specialized expertise, trust us for personalized and
+                    efficient staffing solutions that drive your business
+                    forward.
                   </p>
                 </div>
               </div>
@@ -175,12 +177,11 @@ const About = () => {
                     Our Mission
                   </h3>
                   <p className="text-lg text-center lg:text-right">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the
-                    industry&#39;s standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. Lorem Ipsum is simply dummy
-                    text of the printing and typesetting industry.
+                    Alhayan, our mission is to empower businesses with
+                    exceptional talent and seamless recruitment solutions. We
+                    strive to connect companies with skilled individuals
+                    globally, fostering success and growth for both employers
+                    and employees through personalized service and expertise.
                   </p>
                 </div>
                 <div

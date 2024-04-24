@@ -65,7 +65,7 @@ const Stats = () => {
               <ServiceCard
                 type="stat"
                 bg="#5D8DE2"
-                title="15000+"
+                title="10000+"
                 description="Jobseeker's placed"
               />
               <ServiceCard

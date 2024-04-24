@@ -1,4 +1,3 @@
-import React from "react";
 import Info from "./Info";
 
 const InfoBox = () => {
@@ -6,7 +5,7 @@ const InfoBox = () => {
     <div className="h-full flex flex-col p-8 gap-2 justify-evenly bg-[#A3CBD7]">
       <div>
         <Info
-          text="seamless application process"
+          text="Seamless application process"
           sym={
             <svg
               width="18"
