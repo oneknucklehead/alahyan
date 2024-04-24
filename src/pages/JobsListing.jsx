@@ -33,7 +33,7 @@ const JobsListing = () => {
                   />
                 </svg>
               </Link>
-              <div>
+              <div className="z-50">
                 <div className="flex mx-2">
                   <div className="relative inline-block text-left mr-2">
                     <button

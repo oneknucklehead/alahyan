@@ -146,18 +146,20 @@ const About = () => {
                 </div>
               </div>
               <div className="grid lg:grid-cols-2 w-[90%] mx-auto gap-8 justify-center items-center">
-                <div
-                  className="bg-cover bg-center blur-load h-[30vw] w-[30vw] rounded-full "
-                  style={{
-                    backgroundImage: `url(${ownerSmall})`,
-                  }}
-                >
-                  <img
-                    src={owner}
-                    alt="owner"
-                    loading="lazy"
-                    className="rounded-full mx-auto h-[30vw] w-[30vw] object-center object-cover"
-                  />
+                <div className="flex items-center justify-center">
+                  <div
+                    className="bg-cover bg-center blur-load h-[50vw] w-[50vw] md:h-[30vw] md:w-[30vw] rounded-full "
+                    style={{
+                      backgroundImage: `url(${ownerSmall})`,
+                    }}
+                  >
+                    <img
+                      src={owner}
+                      alt="owner"
+                      loading="lazy"
+                      className="rounded-full mx-auto h-[50vw] w-[50vw] md:h-[30vw] md:w-[30vw] object-center object-cover"
+                    />
+                  </div>
                 </div>
                 <div className="">
                   <h3 className="text-center lg:text-left text-4xl font-semibold mb-4">
@@ -195,18 +197,20 @@ const About = () => {
                     and employees through personalized service and expertise.
                   </p>
                 </div>
-                <div
-                  style={{
-                    backgroundImage: `url(${aboutImgSmall})`,
-                  }}
-                  className="rounded-full bg-cover bg-center blur-load h-[30vw] w-[30vw]"
-                >
-                  <img
-                    src={aboutImg}
-                    loading="lazy"
-                    alt="about us image"
-                    className="rounded-full mx-auto h-[30vw] w-[30vw] object-cover object-center"
-                  />
+                <div className="flex items-center justify-center">
+                  <div
+                    style={{
+                      backgroundImage: `url(${aboutImgSmall})`,
+                    }}
+                    className="rounded-full bg-cover bg-center blur-load h-[50vw] w-[50vw] md:h-[30vw] md:w-[30vw]"
+                  >
+                    <img
+                      src={aboutImg}
+                      loading="lazy"
+                      alt="about us image"
+                      className="rounded-full mx-auto h-[50vw] w-[50vw] md:h-[30vw] md:w-[30vw] object-cover object-center"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
