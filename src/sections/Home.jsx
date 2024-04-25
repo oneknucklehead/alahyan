@@ -120,7 +120,7 @@ const Home = () => {
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
-                Trusting
+                Trusted
               </p>
               <p
                 className="text-4xl sm:text-6xl"

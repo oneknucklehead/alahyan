@@ -1,7 +1,9 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const Info = ({
   text = "Let’s get started",
+  link,
   sym = (
     <svg
       width="18"
@@ -22,15 +24,28 @@ const Info = ({
       <div className="break-all md:break-words text-sm xl:text-[1vw] 2xl:text-[0.9vw] font-semibold ml-4">
         {text}
       </div>
-      <div className="bg-[#091036] flex justify-center items-center text-white p-3 rounded-full">
+      {link ? (
+        <Link
+          to={link}
+          className="bg-[#091036] flex justify-center items-center text-white p-3 rounded-full"
+        >
+          {sym}
+        </Link>
+      ) : (
+        <div className="bg-[#091036] flex justify-center items-center text-white p-3 rounded-full">
+          {sym}
+        </div>
+      )}
+      {/* <div className="bg-[#091036] flex justify-center items-center text-white p-3 rounded-full">
         {sym}
-      </div>
+      </div> */}
     </div>
   );
 };
 
 Info.propTypes = {
   text: PropTypes.string,
+  link: PropTypes.string,
   sym: PropTypes.any,
 };
 

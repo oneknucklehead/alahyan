@@ -10,7 +10,7 @@ const Opportunitybox = () => {
           data-aos-duration="1000"
           className="z-20 text-white text-[1.8vw] text-center"
         >
-          Opportunities from all over the world
+          Opportunities from across the Gulf
         </p>
         <div
           className="w-[80%]"
@@ -18,7 +18,7 @@ const Opportunitybox = () => {
           data-aos-duration="1000"
           data-aos-delay="100"
         >
-          <Info />
+          <Info link={"/alahyan/jobs"} />
         </div>
       </div>
       <img src={semi} alt="semicircle" className="absolute z-10 top-0 left-0" />
