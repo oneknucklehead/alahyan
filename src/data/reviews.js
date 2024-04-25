@@ -9,7 +9,13 @@ const reviews = [
         name: "John Steff",
         position: "Project Manager at Al Baik"
     },
+    {
+        review: "Al-Ahyan exceeded our expectations by swiftly recruiting 500 skilled professionals for our urgent scaffolder openings. Their professionalism and efficiency made the entire process seamless and hassle-free. We highly recommend Al-Ahyan for their exceptional recruitment services.",
+        name: "Ahmed Raza",
+        position: "Manager at Kings Field"
+    },
 
 ];
 export default reviews;
 
+;
