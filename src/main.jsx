@@ -21,20 +21,20 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-        path: "about",
+        path: "/about",
         element: <About />,
       },
 
       {
-        path: "services",
+        path: "/services",
         element: <Services />,
       },
       {
-        path: "contact",
+        path: "/contact",
         element: <Contact />,
       },
       {
-        path: "jobs",
+        path: "/jobs",
         element: <JobsListing />,
       },
     ],
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* <HashRouter basename="/alahyan">
+    <HashRouter basename="/alahyan">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />
@@ -50,7 +50,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/contact" element={<Contact />} />
         <Route path="/jobs" element={<JobsListing />} />
       </Routes>
-    </HashRouter> */}
-    <RouterProvider router={router} />
+    </HashRouter>
+    {/* <RouterProvider router={router} /> */}
   </React.StrictMode>
 );
