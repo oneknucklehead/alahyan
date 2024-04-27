@@ -24,7 +24,7 @@ const TitleBox = () => {
         Consultancy
       </div>
       <Link
-        to="/alahyan/about"
+        to="/about"
         className="text-sm font-normal underline"
         data-aos="fade-up"
         data-aos-duration="1000"
