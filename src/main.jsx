@@ -14,35 +14,34 @@ import Contact from "./pages/Contact.jsx";
 import Services from "./pages/Services.jsx";
 import JobsListing from "./pages/JobsListing.jsx";
 import Error from "./pages/Error.jsx";
+import HomePage from "./pages/HomePage.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <HomePage />,
     errorElement: <Error />,
-    children: [
-      {
-        path: "/about",
-        element: <About />,
-      },
+  },
+  {
+    path: "about",
+    element: <About />,
+  },
 
-      {
-        path: "/services",
-        element: <Services />,
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
-        path: "/jobs",
-        element: <JobsListing />,
-      },
-    ],
+  {
+    path: "services",
+    element: <Services />,
+  },
+  {
+    path: "contact",
+    element: <Contact />,
+  },
+  {
+    path: "jobs",
+    element: <JobsListing />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* <HashRouter basename="/alahyan">
+    {/* <HashRouter basename="">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />
