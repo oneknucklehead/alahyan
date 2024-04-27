@@ -145,7 +145,7 @@ const Home = () => {
               </p>
             </div>
             <div>
-              <Link to="/alahyan/jobs">
+              <Link to="/jobs">
                 <button
                   className="shadow-xl text-white text-sm sm:text-lg bg-[#091036] rounded-full px-4 py-2"
                   data-aos="fade-up"

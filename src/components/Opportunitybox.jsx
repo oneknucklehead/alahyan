@@ -1,4 +1,3 @@
-import React from "react";
 import semi from "../assets/semi2.png";
 import Info from "./Info";
 const Opportunitybox = () => {
@@ -18,7 +17,7 @@ const Opportunitybox = () => {
           data-aos-duration="1000"
           data-aos-delay="100"
         >
-          <Info link={"/alahyan/jobs"} />
+          <Info link={"/jobs"} />
         </div>
       </div>
       <img src={semi} alt="semicircle" className="absolute z-10 top-0 left-0" />
