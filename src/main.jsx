@@ -16,7 +16,7 @@ import JobsListing from "./pages/JobsListing.jsx";
 import Error from "./pages/Error.jsx";
 const router = createBrowserRouter([
   {
-    path: "/alahyan",
+    path: "/",
     element: <App />,
     errorElement: <Error />,
     children: [
