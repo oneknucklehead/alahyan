@@ -74,7 +74,7 @@ const Home = () => {
                     id="dropdownMenuLeft"
                   >
                     <Link
-                      to="/alahyan/about"
+                      to="/about"
                       className="block px-4 py-2 text-sm 
                                    text-[#091036] 
                                    hover:bg-gray-100"
@@ -82,7 +82,7 @@ const Home = () => {
                       About Us
                     </Link>
                     <Link
-                      to="/alahyan/services"
+                      to="/services"
                       className="block px-4 py-2 text-sm
                                    text-[#091036] 
                                    hover:bg-gray-100"
@@ -90,7 +90,7 @@ const Home = () => {
                       Services
                     </Link>
                     <Link
-                      to="/alahyan/contact"
+                      to="/contact"
                       className="block px-4 py-2 text-sm
                                    text-gray-700 
                                    hover:bg-gray-100"
@@ -98,7 +98,7 @@ const Home = () => {
                       Contact Us
                     </Link>
                     <Link
-                      to="/alahyan/jobs"
+                      to="/jobs"
                       className="block px-4 py-2 text-sm
                                    text-gray-700 
                                    hover:bg-gray-100"
@@ -109,7 +109,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <Link to="/alahyan/">
+            <Link to="/">
               <img src={imgSrc} className="w-32 md:w-28" alt="brand logo" />
             </Link>
           </div>

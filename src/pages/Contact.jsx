@@ -77,10 +77,7 @@ const Contact = () => {
         <Container>
           <div>
             <div className="flex gap-2 flex-wrap justify-between items-center">
-              <Link
-                to="/alahyan/"
-                className="rounded-full shadow-xl bg-[#091036] p-3"
-              >
+              <Link to="/" className="rounded-full shadow-xl bg-[#091036] p-3">
                 <svg
                   width="20"
                   height="20"
@@ -116,7 +113,7 @@ const Contact = () => {
                       id="dropdownMenuLeft"
                     >
                       <Link
-                        to="/alahyan/about"
+                        to="/about"
                         className="block px-4 py-2 text-sm 
                                text-[#091036] 
                                hover:bg-gray-100"
@@ -124,7 +121,7 @@ const Contact = () => {
                         About Us
                       </Link>
                       <Link
-                        to="/alahyan/services"
+                        to="/services"
                         className="block px-4 py-2 text-sm
                                text-[#091036] 
                                hover:bg-gray-100"
@@ -132,7 +129,7 @@ const Contact = () => {
                         Services
                       </Link>
                       <Link
-                        to="/alahyan/contact"
+                        to="/contact"
                         className="block px-4 py-2 text-sm
                                text-gray-700 
                                hover:bg-gray-100"
@@ -140,7 +137,7 @@ const Contact = () => {
                         Contact Us
                       </Link>
                       <Link
-                        to="/alahyan/jobs"
+                        to="/jobs"
                         className="block px-4 py-2 text-sm
                                    text-gray-700 
                                    hover:bg-gray-100"

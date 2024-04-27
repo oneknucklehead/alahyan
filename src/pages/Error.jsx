@@ -4,10 +4,7 @@ const Error = () => {
   return (
     <div>
       <div className="flex gap-4 items-center">
-        <Link
-          to="/alahyan/"
-          className="rounded-full shadow-xl bg-[#091036] p-3"
-        >
+        <Link to="/" className="rounded-full shadow-xl bg-[#091036] p-3">
           <svg
             width="20"
             height="20"
